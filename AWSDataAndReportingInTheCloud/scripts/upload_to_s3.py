@@ -7,7 +7,7 @@ s3_client = boto3.client('s3')
 input_directory = '../parquet_format'
 
 # set the S3 bucket name and folder name
-bucket_name = 'ds-868398'
+bucket_name = 'datasource-868398'
 
 # list of local parquet files to upload to S3
 parquet_files = [f for f in os.listdir(input_directory) if f.endswith('.parquet')]
