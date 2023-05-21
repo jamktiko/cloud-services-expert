@@ -8,7 +8,7 @@ const REGION = "us-east-1"; // update to your region
 const rekogClient = new RekognitionClient({ region: REGION });
 
 // Read the local image data
-const image = fs.readFileSync("face1.jpg");
+const image = fs.readFileSync("face1.jpeg");
 
 // Add a face to the Rekognition collection
 const addFace = async () => {
